@@ -19,8 +19,8 @@ class CreateTasksTable extends Migration
             $table->string('owner', 60)->default('No owner')->nullable(false);
             $table->string('status', 50)->default('-')->nullable(false);
             $table->string('category', 100)->default('-')->nullable(false);
-            $table->timestamp('created-at')->default(now())->nullable(false);
-            $table->dateTime('finished-at')->nullable();
+            $table->timestamp('created_at')->default(now())->nullable(false);
+            $table->dateTime('finished_at')->nullable();
             $table->string('priority', 20)->default('Low')->nullable(false);
         });
     }
