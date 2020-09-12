@@ -21,9 +21,9 @@
 
 <body>
     <div class="text-gray-300">
-        <nav class="bg-gray-100 text-gray-900 shadow-xs px-4 py-2 flex items-center justify-between">
-            <div class="flex items-center ml-4">Logo goes here</div>
-            <div class="flex items-center mr-4">Avatar goes here</div>
+        <nav class="bg-gray-200 text-gray-900 shadow-xs px-4 py-2 flex items-center justify-between">
+            <div class="flex items-center md:ml-4">Logo goes here</div>
+            <div class="flex items-center md:mr-4">Avatar goes here</div>
         </nav>
     </div>
     @yield ('content')
