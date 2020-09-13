@@ -6,11 +6,13 @@
 
     <div class="mt-20">
         @foreach ($status as $st)
+        @if(!$st->tasks->IsEmpty()) 
         <div class="ml-4 md:mx-auto mt-8 max-w md:max-w-2xl">
             <h1 class="text-lg text-gray-800 border-b-2">
                 {{ $st->name }}
             </h1>
         </div>
+        @endif
             @foreach ($st->tasks as $task)
                 
                 <div class="px-3 py-2 bg-gray-100 border-l-4 {{ \App\Http\Controllers\TaskController::setPriorityColor($task->priority) ?? '' }} rounded mx-4 md:mx-auto my-5 max-w md:max-w-2xl">
