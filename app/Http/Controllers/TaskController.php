@@ -29,11 +29,14 @@ class TaskController extends Controller
                 $color = 'border-teal-300';
                 break;
             case 'Medium':
-                $color = 'border-orange-400';
+                $color = 'border-yellow-400';
                 break;
             case 'High':
-                $color = 'border-red-400';
-                break;         
+                $color = 'border-orange-400';
+                break;   
+            case 'Urgent':
+                $color = 'border-red-400'    ;
+                break;  
         }
         return $color;
     }
